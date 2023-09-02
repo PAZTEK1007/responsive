@@ -1,0 +1,105 @@
+
+@media only screen and (max-width: 410px) {
+    body{
+        background-image: url("/assets/background.png");
+        background-size:auto;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #small ,#medium , #large{
+        background-color: rgb(245, 197, 242);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    h2{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    p{
+        font-size: 20px;
+        border-left: 1px solid black;
+        padding-left: 9px;
+        font-family: 'Kaushan Script', cursive;
+    }
+  
+}
+
+@media only screen and (min-width: 410px){
+    body{
+        background-image: url("/assets/background.png");
+        background-size: cover;
+        background-repeat: none;
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "small small medium"
+            "large large large";
+    }
+
+    #small ,#medium , #large{
+        background-color: rgb(245, 197, 242);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    #medium{
+        grid-area: medium;
+    }
+
+    #small{
+        grid-area: small;
+    }
+
+    #large{
+        grid-area: large;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    p{
+        font-size: 25px;
+        border-left: 1px solid black;
+        padding-left: 9px;
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        
+        background-image: url("/assets/background.png");
+        background-size: cover;
+        background-repeat: none;
+        grid-template-columns: repeat(3 ,1fr);
+        border-radius: 10px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "small medium large";
+    }
+
+    h2{
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    p{
+        font-size: 30px;
+        font-family: 'Kaushan Script', cursive;
+        border-left: 1px solid black;
+        padding-left: 9px;
+    }
+    #small ,#medium , #large{
+        background-color: rgb(245, 197, 242);
+    }
+    
+}
